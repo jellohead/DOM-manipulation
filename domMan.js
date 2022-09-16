@@ -32,7 +32,14 @@ myDiv.appendChild(myP2);
 
 container.appendChild(myDiv);
 
+// listeners on groups of nodes
+const buttons = document.querySelectorAll('button');
 
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+});
 
 
 
@@ -44,3 +51,24 @@ container.appendChild(myDiv);
 // another <h1> that says “I’m in a div”
 // a <p> that says “ME TOO!”
 // Hint for this one: after creating the <div> with createElement, append the <h1> and <p> to it before adding it to the container.
+
+// named function
+// function funkyFunction(music, isWhiteBoy) {
+//     if (isWhiteBoy) {
+//       console.log('Play: ' +  music);
+//     }
+//   }
+
+//   // This example is still an anonymous function even though we used the `function` keyword, as it doesn't have a name.
+// const funkyFunction = function(music, isWhiteBoy) {
+//     if (isWhiteBoy) {
+//       console.log('Play: ' +  music);
+//     }
+//   }
+  
+//   // This is called an arrow function, we'll get into these soon.
+//   const funkyFunction = (music, isWhiteBoy) => {
+//     if (isWhiteBoy) {
+//       console.log('Play: ' +  music);
+//     }
+//   }
