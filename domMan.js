@@ -18,11 +18,22 @@ myH3.classList.add('myH3');
 myH3.textContent = "I'm a blue h3";
 container.appendChild(myH3);
 
-// container.appendChild(content);
+const myDiv = document.createElement('div');
+myDiv.classList.add('myDiv');
 
-// content = document.createElement('p');
-// content.classList.add('content');
-// container.appendChild(content);
+const myH1 = document.createElement('h1');
+myH1.classList.add('myH1');
+myH1.textContent = "I'm in a div";
+myDiv.appendChild(myH1);
+
+const myP2 = document.createElement('p');
+myP2.classList.add('myP2');
+myP2.textContent = "ME TOO!";
+myDiv.appendChild(myP2);
+
+container.appendChild(myDiv);
+
+
 
 
 
